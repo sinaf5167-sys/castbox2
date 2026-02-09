@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <link rel="stylesheet" href="asset/styleTwo/header.css" />
+    <link rel="stylesheet" href="asset/styleTwo/content.css"/>
+    <link rel="stylesheet" href="asset/styleTwo/footer.css"/>
+
+    <!-- <script src="script/category.js">   </script> -->
+    <script src="asset/script/category.json">   </script>
+    
+  
+</head>
+
+<body>
+
+<div id="header">
+
+    <div id="logo"></div>
+    <div id="listen">Listen</div>
+    <div id="Top_Shows">Top Shows</div>
+    <div id="Blog">Blog</div>
+    <div id="searhh">
+        <input id="ss" type="text" placeholder="search , show">
+        <div id="result">
+            <div id="search_of">
+                <!-- <div>search of </div> -->
+            </div>
+            <div id="search_show">
+                <!-- <div id="mini_item" class="mini_item">sssss</div> -->
+            </div>
+        </div>
+    </div>
+    <div id="cloud"></div>
+    <div id="zang"></div>
+    <div id="besket"></div>
+    <div id="clos"></div>
+
+</div>
+<div id="content">
+
+   
+
+
+    <div  id="subscribed" class="hide"class="subscribed">
+        <div class="top_profile">
+            <div class="profile_pic"></div>
+            <div class="prof">your name</div>
+        </div>
+        <div class="left_subscribed" id="left_subscribed">
+            <!-- <div class="item">
+                <div class="image" >
+                
+                </div>
+                <div class="name">ssdddddddddddddddss</div>
+                 <div class="Author_dec" id="aud">ssddddddddddddddddss</div>
+               
+            </div> -->
+        </div>
+        <div class="right">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <div class="main" id="main">
+        <div id="top">
+            <div id="category"> category</div>
+            <div class="head_title">> all</div>
+        </div>
+
+
+
+        <div id="auther_holder" class="hide">
+
+            <div class="Author" id="Author">
+                <div class="Author_img" > <img id="Author_img" src="" alt=""> </div>
+                
+                <h2 class="Author_name" id="Author_name">ssss</h2>
+                <p class="Author_dec" id="Author_dec"></p>
+
+                <div id="episodes_section">
+                    <div class="episodes-header">
+                        <span class="episodes-count">Episodes</span>
+                        <button class="reverse-btn">Reverse</button>
+                    </div>
+
+                    <ul class="episode-list" id="episode_list">
+
+                        <li class="episode-card">
+                            <div class="episode-cover placeholder"><img id="Author_img2" src="" alt="" ></div>
+
+                            <div class="episode-info">
+                                <h4 class="episode-title">Episode title example one</h4>
+                                <div class="episode-meta">
+                                    <span>2026-02-07</span>
+                                    <span>40:04</span>
+                                </div>
+                            </div>
+
+                            <div class="play-btn">▶</div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        
+        <div id="botton" class="botton">
+
+            <div class="category_butten" id="category_butten">&nbsp;  category
+                <div class="category_menu" id="category_menu" >
+                    <div id="News">&nbsp;News</div>
+                    <div id="Featured">&nbsp;Featured</div>
+                    <div id="True_Crime">&nbsp;True Crime</div>
+                    <div id="Society">&nbsp;Society & Culture</div>
+                </div>
+            </div>
+    
+
+            <div id="left">
+
+            <!-- 
+                <div class="item">
+                    <div class="number">3</div>
+                    <div class="image" >
+                    
+                    </div>
+                    <div class="info">
+                        <div class="name">ssdddddddddddddddss</div>
+                        <div class="writer">ssddddddddddddddddss</div>
+                    </div>
+                    <div class="add"></div>
+                </div> -->
+                
+            </div>
+
+            <div id="right">
+                <div class="flag-a">
+                    <div class="mtn">Download from Google Play</div>
+                </div>
+                <div class="flag-b">
+                    <div class="mtn">Download from App Store</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+<div id="footer"></div>
+    
+
+
+
+<!-- Audio Player Modal -->
+<div id="audioModal" class="audio-modal hide">
+  <div class="audio-box">
+    <span class="close-audio" id="closeAudio">✖</span>
+
+    <h3 id="audioTitle">Now Playing</h3>
+
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" src="" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+</div>
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+                                   //    header
+
+searhh.onclick = function(){
+    
+    besket.className = "hide";
+    zang.className = "hide";
+    cloud.className = "hide";
+    searhh.style["background"] = "none";
+    searhh.style["display"] = "block";
+    clos.style["display"] = "block";
+    searhh.style["width"] = "300px";
+    searhh.style["margin-left"] = "100px";
+    ss.style["display"] = "block";
+    // result.style["display"] = "block";
+}
+
+clos.onclick = function(){
+    ss.style["display"] = "none";
+    besket.className = "block";
+    zang.className = "block";
+    cloud.className = "block";
+    searhh.style["background"] = "";
+    searhh.style["display"] = "";
+    clos.style["display"] = "none";
+    searhh.style["width"] = "50px";
+    searhh.style["margin-left"] = "";
+    result.style["display"] = "";
+}
+
+
+
+
+
+
+
+                                                           // link
+
+
+function direct() {
+     window.location.href = "castBoxs.html";
+}
+
+logo.onclick = function(){
+    direct()
+}
+
+
+
+
+
+
+
+// function showPublisher(infoId){
+//     main.className = "show";
+//     botton.className = "hide";
+//     subscribed.className = "hide";
+//     auther_holder.className = "show";
+
+//     let curId = cat.find(el => el.id == infoId);
+    
+//     Author_img.src = "img/" + cat[3].pic[0];
+//     Author_name.innerHTML = curId.name ;
+//     Author_dec.innerHTML = curId.describe ;
+
+//     console.log(infoId)
+
+// }
+                                                        // navegation
+
+function showPublisher(infoItem) {
+    main.className = "show";
+    botton.className = "hide";
+    subscribed.className = "hide";
+    auther_holder.className = "show";
+
+    document.getElementById('Author_img').src = "img/" + infoItem.pic[0];
+     document.getElementById('Author_img2').src = "img/" + infoItem.pic[0];
+    document.getElementById('Author_name').innerHTML = infoItem.name;
+    document.getElementById('Author_dec').innerHTML = infoItem.describe;
+}
+
+
+
+
+
+function showMain(mainInfoId){
+    main.className = "show";
+    botton.className = "botton";
+    auther_holder.className = "hide";
+    subscribed.className = "hide";
+    // creatItem(left);
+}
+
+function showSubscribed(SubscribedId){
+    main.className = "hide";
+    auther_holder.className = "hide";
+    subscribed.className = "show";
+}
+
+
+
+// listen.onclick = function(){
+// showPublisher()
+// }
+besket.onclick = function(){
+showSubscribed()
+}
+Top_Shows.onclick = function(){
+showMain()
+}
+category.onclick = function(){
+showMain()
+}
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const audioModal = document.getElementById("audioModal");
+  const audioPlayer = document.getElementById("audioPlayer");
+  const closeAudio = document.getElementById("closeAudio");
+  const audioTitle = document.getElementById("audioTitle");
+
+  document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("play-btn")) {
+
+      audioPlayer.src = "asset/sound/skyfall_full_length.mp3";
+      audioTitle.innerText = "Episode title example one";
+
+      audioModal.classList.add("show");
+      audioPlayer.play();
+    }
+  });
+
+  closeAudio.onclick = function () {
+    audioPlayer.pause();
+    audioModal.classList.remove("show");
+  };
+
+  audioModal.onclick = function (e) {
+    if (e.target === audioModal) {
+      audioPlayer.pause();
+      audioModal.classList.remove("show");
+    }
+  };
+
+});
+
+
+
+
+
+
+</script>
+                                                  
+
+
+
+
+
+</body>
+
+<script src="asset/script/Search.js"> </script>
+
+<script src="asset/script/create.js">   </script>
+
+</html>

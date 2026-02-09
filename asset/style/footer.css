@@ -1,0 +1,92 @@
+#footer{
+    height: 400px;
+    background: #061f33;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#footer > .left{
+    height: 300px;
+    /* border: 1px solid rgb(233, 233, 233); */
+    color: #fff;
+    width: 584px;
+}
+#footer > .left > .logo{
+    height: 100px;
+    /* border: 1px solid rgb(233, 233, 233); */
+    color: #fff;
+    width: 203px;
+    margin-top: 51px;
+    background: url(../img/castbox_logo-text.png) no-repeat 0% 50%;
+    background-size: 70%;
+}
+#footer > .left >  div{
+    height: 50px;
+    /* border: 1px solid rgb(233, 233, 233); */
+}
+
+#footer > .left >  .d{
+    height: 50px;
+    margin-top: 60px;
+    /* border: 1px solid rgb(233, 233, 233); */
+}
+
+
+#footer > .middle{
+    height: 300px;
+    /* border: 1px solid rgb(233, 233, 233); */
+    color: #fff;
+    width: 204px;
+}
+#footer > .middle > ul{
+    margin-top: 100px;
+    color: #fff;
+    list-style: none;
+}
+#footer > .middle > ul > li{
+    margin-top: 15px;
+    color: #d0d0d0;
+    width: 204px;
+    list-style: none;
+ }
+ #footer > .middle > ul > li:hover{
+    color: sandybrown;
+ }
+ 
+
+
+
+#footer > .right{
+    height: 300px;
+    /* border: 1px solid rgb(233, 233, 233); */
+    color: #fff;
+    width: 279px;
+}
+
+#footer > .right > ul{
+    margin-top: 100px;
+    color: #fff;
+    list-style: none;
+}
+#footer > .right > ul > li{
+    margin-top: 15px;
+    color: #d0d0d0;
+    width: 204px;
+    list-style: none;
+ }
+ #footer > .right > ul > li:hover{
+    color: sandybrown;
+ }
+ 
+
+ 
+@media  screen and (max-width: 700px) {
+
+ 
+    #footer > .left{
+      display: none;
+    }
+ 
+    
+ }

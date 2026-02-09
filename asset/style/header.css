@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+}
+.hide{
+    display: none;
+}
+
+#header{
+    /* height: 675px; ; */
+    /* width: 1200px ; */
+    /* margin: auto; */
+    /* border: 1px solid black; */
+}
+
+#header > .top{
+    height: 78px; ;
+    border: 1px solid black;
+}
+
+#header > .top{
+    height: 78px; ;
+    /* border: 1px solid rgb(247, 247, 247); */
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+    background: #061f33;
+}
+#header > .top > div{
+    height: 100%; ;
+    width: 120px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    color: #eee;
+    text-align: center;
+    line-height: 80px;
+}
+#header > .top > div:hover{
+    color: #e69532;
+    cursor: pointer;
+}
+
+#header > .top > #logo{
+    width: 155px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    
+    background: url(../img/logo.c20be293\(2\).png) no-repeat 40% 50%;
+    background-size: 90%;
+}
+#header > .top > .Sign_in{
+    /* border: 1px solid rgb(255, 255, 255); */
+    width:70px;
+}
+
+#header > .top > #search{
+    direction: rtl;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-left: 220px;
+    width: 50px;
+    background: url(../img/search-regular-36\(2\).png) no-repeat 55%;
+    text-align: center;
+     position: relative;
+}
+#header > .top > #search > input{
+    /* direction: rtl; */
+    margin: auto;
+    margin-top: 20px;
+   display: none;
+   width: 90%;
+  border: 0 none;
+  outline: 0 none;
+  color: #eee;
+  background: rgba(245,246,248,1);
+  /* background: #061f33;  */
+  background: url(../img/search-regular-36\(2\).png) rgba(0, 0, 0, 0.9) no-repeat 5% 50%;
+    background-size: auto;
+  background-size: 25px;
+  padding: 10px;
+  border-radius: 75px;
+  font-size: 12px;
+  text-indent: 30px;
+  position: relative;
+  z-index: 500;
+  cursor: pointer;
+}
+
+/* #header > .top > #search > #clos{
+    display: none;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    left: 567px;
+    top: 27px;
+    z-index: 100px;
+} */
+
+#header > .top > #search > #gx{
+    display: none;
+    margin-left: 20px;
+    margin-top: -35px;
+    margin-right: 3px;
+}
+
+#header > .top > #Listen{
+    width: 50px;
+}
+
+
+
+
+
+              /* head button */
+
+
+#header > .bottom{
+    /* height: 600px;  */
+    /* border: 1px solid black; */
+    background: url(../img/banner_bg.0f7ff6f4.jpg) no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+   white-space: nowrap;
+}
+#header > .bottom > .box{
+    
+    
+   min-height:  600px; 
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#header > .bottom > .box > .right{
+    position: relative;
+    width: 550px; 
+    /* height: 80%;  */
+    height: 480px;; 
+    bottom: -121px;
+    /* border: 1px solid black; */
+    background: url(../img/index_bg_phone.862bc5ea.png) no-repeat 60% 100%;
+    background-size: 85%;
+    padding: 0;
+}
+
+
+
+#header > .bottom > .box > .left{
+    width: 500px; 
+    /* height: 400px;  */
+    /* border: 1px solid black;  */
+}
+#header > .bottom > .box > .left > .title{
+    height: 200px; 
+    /* border: 1px solid black; */
+    margin-top: 140px;
+}
+#header > .bottom > .box > .left > .title > div{
+    height: 40px; 
+    width: 400px;
+    /* border: 1px solid black; */
+    color: #eee;
+    font-size: 35px;
+    margin-left: 70px;
+}
+#header > .bottom > .box > .left > .title > .t{
+    color: #ffffff;
+}
+
+                    /* btn */
+
+#header > .bottom > .box > .left > .btn{
+    height: 200px; 
+    /* border: 1px solid black; */
+    /* margin-top: 140px; */
+}
+#header > .bottom > .box > .left > .btn > .a{
+    height: 53px;
+    width: 200px; 
+    background: #eee;
+    border-radius: 42px;
+    margin-left: 60px;
+    /* margin-top: 140px; */
+    text-align: center;
+    color: rgb(237, 152, 83);
+    line-height:51px;
+    cursor: pointer;
+}
+#header > .bottom > .box > .left > .btn > .a:hover{
+    background:  rgb(236, 118, 22);
+    color:  #eee ;
+}
+
+#header > .bottom > .box > .left > .btn > .b{
+    height: 53px;
+    width: 200px; 
+    background: #eee;
+    border-radius: 42px;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(237, 152, 83);
+    line-height:51px;
+    cursor: pointer;
+}
+#header > .bottom > .box > .left > .btn > .b:hover{
+    background:  rgb(236, 118, 22);
+    color:  #eee ;
+}
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 800px) {
+
+/* #header > .bottom > .box{
+    
+    height: 639; 
+    height: 600px; 
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+     align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+
+
+#header > .bottom > .box > .right{
+  display: none;
+}
+
+
+#header > .top > #Listen,
+#header > .top >#Blog,
+#header > .top > #Top_Shows,
+#header > .top > #For_Podcasters,
+#header > .top > #Get_the_App  {
+    display: none;
+}
+
+  }

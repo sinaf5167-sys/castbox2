@@ -1,0 +1,123 @@
+#dell{
+    /* height: 1000px; */
+    border: 1px solid black;
+}
+#dell > .category{
+    height: 80px;
+    /* border: 1px solid black; */
+    margin: auto;
+    background: rgb(238, 237, 237);
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: center;
+}
+#dell > .category > div{
+    /* border: 1px solid black; */
+    min-width:  auto;
+    margin-left: 50px ;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(67, 67, 67);
+    line-height: 75px;
+}
+#dell > .category > div:hover{
+    color: #e69532;
+    cursor: pointer;
+
+}
+
+
+
+
+            /* show */
+
+
+
+#dell > #grid.show{
+    min-height: 285px;
+    max-width: 1100px;
+    min-width: 300px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* position: relative; */
+    direction: rtl;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+/* #dell > .show > #page{
+    direction: rtl;
+    height: 100%;
+    width: 1100px;
+    border: 1px solid black;
+   
+} */ 
+
+#dell > .show >  .item{
+   max-height: 240px;
+   min-width: 10%;
+    /* border: 1px solid black; */
+   /* margin: 10px;  */
+}
+#dell > .show > .item > .img{
+    height:190px;
+   /* min-width: 200px; */
+    /* border: 1px solid black; */
+     /* background: url(img/lpotl-logo.jpg) no-repeat; 
+    background-size: 100% 100%; */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: filter 0.5s;
+}
+#dell > .show > .item > .img > img{
+    width: 100%;
+    height: 100%;
+}
+#dell > .show > .item > .img > img:hover{
+    filter: blur(1px);
+    
+}
+#dell > .show > .item > .mtn {
+    max-height:55px;
+   direction: ltr;
+   /* border: 1px solid black; */
+   margin-top: 10px;
+  min-width: 30px;
+}
+
+
+#dell > #more {
+   
+    margin: auto;
+    height: 53px;
+    width: 200px; 
+    background:  rgb(236, 118, 22);
+    border-radius: 42px;
+    text-align: center;
+    line-height:51px;
+    cursor: pointer;
+   color:  #eee ; 
+   margin-bottom: 20px;
+}
+
+
+#dell > #more:hover{
+   
+    color: rgb(237, 152, 83);
+     background: #e1e0e0;
+}
+
+
+
+
+
+
+
+
+
